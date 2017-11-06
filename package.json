@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "sss",
   "cordova": {
-    "id": "cordova.plugins.myplugin",
+    "id": "cordova.plugin.myplugin",
     "platforms": [
       "android"
     ]
