@@ -1,16 +1,11 @@
-cordova.define("myplugin.myplugin",
+cordova.define("cordova-plugin-myplugin.myplugin",
     function(require, exports, module) {
 
-        /*
-         * 实现方式一
-        */
         var exec = require("cordova/exec");
-        module.exports = {
+    var myplugin={
             toast: function(content){
                 exec(null,null,"myplugin","toast",[content]);
-            },
-            toastWithCallback: function (content, successCallback, errorCallback) {
-                cordova.exec(successCallback, errorCallback, "myplugin", "toastWithCallback", [content]);
             }
-        }
+        };
+        module.exports = myplugin;
 });
